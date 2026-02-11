@@ -22,6 +22,7 @@ html{
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+     overflow-x: hidden;
     
 }
 
@@ -493,6 +494,8 @@ span{
 (max-width: 1200px){
  html{
      font-size: 55%;
+     min-width: 70%;
+
  }
 }
 @media 
@@ -517,7 +520,7 @@ span{
  }
 }
 @media
-(max-width: 768px){
+(max-width: 700px){
  #menu-icon{
      display: block;
  }
@@ -568,15 +571,12 @@ span{
     .contact{
         flex-direction: column;
     text-align: center;
- 
+     min-width: 70%;
      
-         background:linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/me.jpg") ;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
+        
     }
     form{
-        width: 30vh;
+        min-width: 70%;
     }
     .wrapper{
         width: 50vh;
